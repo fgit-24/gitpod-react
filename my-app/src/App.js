@@ -1,9 +1,9 @@
 import "./App.css";
-// import MethodsAsPropsParent from "./components/MethodsAsPropsParent";
+import RenderingList from "./components/RenderList";
 
 function App() {
   return <div className="App">
-      {/* <MethodsAsPropsParent /> */}
+      <RenderingList />
   </div>;
 }
 
