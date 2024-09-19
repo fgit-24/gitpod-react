@@ -1,9 +1,9 @@
 import "./App.css";
-import MethodsAsPropsParent from "./components/MethodsAsPropsParent";
+// import MethodsAsPropsParent from "./components/MethodsAsPropsParent";
 
 function App() {
   return <div className="App">
-      <MethodsAsPropsParent />
+      {/* <MethodsAsPropsParent /> */}
   </div>;
 }
 
