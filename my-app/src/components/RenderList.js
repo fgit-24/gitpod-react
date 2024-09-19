@@ -1,43 +1,51 @@
 import React from "react";
+import Book from "./Book";
 
-function RenderingList() {
-    const booklist = [
-        {
-            title: 'To kill a mockingbird',
-            author: 'Harper Lee',
-            pages: 281
-        },
-        {
-            title: 'The great gatsby',
-            author: 'F. Scott Fitzgerald',
-            pages: 218
-        },
-        {
-            title: 'The catcher in the rye',
-            author: 'J.D. Salinger',
-            pages: 234
-        }
-    ];
+function RenderingLists() {
+  const bookList = [
+    "to kill a mockingbird",
+    "the great gatsby",
+    "the catcher in the rye",
+  ];
 
-    return (
-        <div>
-            { booklist.map(book => (
-                <h2 key={book.title}>{book.title}</h2>
-            )) }
-
-            <hr />
-
-            { booklist.map(book => {
-                return (
-                    <div key={book.title}>
-                        <h5>{book.title}</h5>
-                        <p>{book.author}</p>
-                        <p>{book.pages}</p>
-                    </div>
-                );
-            })}
-        </div>
-    );
+  const books = [
+    {
+      title: "to kill a mockingbird",
+      author: "harper lee",
+      pages: 281,
+    },
+    {
+      title: "the great gatsby",
+      author: "f. scott fitzgerald",
+      pages: 218,
+    },
+    {
+      title: "the catcher in the rye",
+      author: "j. d. salinger",
+      pages: 234,
+    },
+  ];
+  return (
+    <div>
+      {bookList.map((book) => {
+        return <h2 key={book}>{book}</h2>;
+      })}
+      <hr />
+      {books.map((book) => {
+        return (
+          <div key={book.title}>
+            <h5>{book.title}</h5>
+            <p>{book.author}</p>
+            <p>{book.pages}</p>
+          </div>
+        );
+      })}
+      <hr />
+      {books.map((book) => {
+        return <Book key={book.title} book={book} />;
+      })}
+    </div>
+  );
 }
 
-export default RenderingList;
+export default RenderingLists;
