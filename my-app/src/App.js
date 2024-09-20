@@ -1,10 +1,9 @@
 import "./App.css";
-import RenderingList from "./components/RenderList";
-import LifeCyclesCDM from "./components/LifeCyclesCDM";
+import ControlledForm from "./components/ControlledForm";
 
 function App() {
   return <div className="App">
-      <LifeCyclesCDM />
+      <ControlledForm />
   </div>;
 }
 
