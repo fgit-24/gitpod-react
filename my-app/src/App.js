@@ -3,7 +3,7 @@ import UncontrolledForm from "./components/ControlledForm";
 
 function App() {
   return <div className="App">
-      <UncontrolledForm />
+      <SearchBar1 />
   </div>;
 }
 
