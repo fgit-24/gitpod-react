@@ -1,9 +1,8 @@
-import "./App.css";
-import UncontrolledForm from "./components/ControlledForm";
+import SearchBar from "./components/SearchBar";
 
 function App() {
   return <div className="App">
-      <SearchBar1 />
+      <SearchBar />
   </div>;
 }
 
