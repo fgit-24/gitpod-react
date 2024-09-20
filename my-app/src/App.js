@@ -1,9 +1,9 @@
-import SearchBar from "./components/SearchBar";
+import ControlledFormHooks from "./components/ControlledFormHooks";
 
 function App() {
   return <div className="App">
-      <Contents />
-  </div>;
+      <ControlledFormHooks />
+  </div>
 }
 
 export default App;
