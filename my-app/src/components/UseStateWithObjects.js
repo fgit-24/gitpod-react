@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 function UseStateWithObjects() {
-    const [name, setName] = useState({ firstName: "", lastName: "" });
+    const [name, setName] = useState({ firstName: '', lastName: '' })
 
     return (
         <div>
@@ -10,6 +10,7 @@ function UseStateWithObjects() {
                     type="text"
                     value={name.firstName}
                     onChange={e => setName({
+                        ...name,
                         firstName: e.target.value
                     })}
                 />
@@ -17,6 +18,7 @@ function UseStateWithObjects() {
                     type="text"
                     value={name.lastName}
                     onChange={e => setName({
+                        ...name,
                         lastName: e.target.value
                     })}
                 />
